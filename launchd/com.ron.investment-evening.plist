@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>Label</key><string>com.ron.investment-evening</string>
+<key>ProgramArguments</key><array><string>/Users/REPLACE_USERNAME/investment_ticker/.venv/bin/python</string><string>-m</string><string>app.cli</string><string>evening</string></array>
+<key>WorkingDirectory</key><string>/Users/REPLACE_USERNAME/investment_ticker</string>
+<key>StartCalendarInterval</key><dict><key>Hour</key><integer>21</integer><key>Minute</key><integer>30</integer></dict>
+<key>StandardOutPath</key><string>/Users/REPLACE_USERNAME/investment_ticker/logs/evening.out.log</string>
+<key>StandardErrorPath</key><string>/Users/REPLACE_USERNAME/investment_ticker/logs/evening.err.log</string>
+</dict></plist>

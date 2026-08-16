@@ -1,0 +1,176 @@
+app:
+  timezone: Asia/Taipei
+  state_file: data/state.json
+  log_file: logs/investment_ticker.log
+  price_refresh_seconds: 60
+  valuation_refresh_hour: 21
+  valuation_refresh_minute: 0
+  alert_cooldown_minutes: 30
+  stale_target_days: 7
+
+schedule:
+  morning: "09:20"
+  evening: "21:30"
+
+notifications:
+  macos: true
+
+pushplus:
+  enabled: true
+  token: ""
+  topic: ""
+  template: html
+  max_chars: 5000
+
+# 可选：Finnhub 用于美股每日抓取分析师目标价/2027E EPS。
+# 当前 Price Target / EPS Estimates 属于 Finnhub 的 estimates 数据权限，
+# 没有 key 或没有权限时自动降级到 MarketScreener / 本地参数，不影响行情监控。
+finnhub:
+  enabled: true
+  token: ""
+
+symbols:
+  GOOGL:
+    name: Alphabet
+    market: US
+    currency: USD
+    target_source: finnhub
+    fallback_consensus_target: 350
+    fallback_buy_margins: [0.90, 0.85, 0.78]
+    fallback_sell_multipliers: [1.15, 1.25]
+
+  MSFT:
+    name: Microsoft
+    market: US
+    currency: USD
+    target_source: finnhub
+    fallback_consensus_target: 486
+    fallback_buy_margins: [0.90, 0.85, 0.78]
+    fallback_sell_multipliers: [1.08, 1.18]
+
+  AVGO:
+    name: Broadcom
+    market: US
+    currency: USD
+    target_source: finnhub
+    fallback_consensus_target: 430
+    fallback_buy_margins: [0.90, 0.85, 0.78]
+    fallback_sell_multipliers: [1.10, 1.20]
+
+  MU:
+    name: Micron
+    market: US
+    currency: USD
+    target_source: finnhub
+    fallback_consensus_target: 950
+    fallback_buy_margins: [0.90, 0.82, 0.72]
+    fallback_sell_multipliers: [1.10, 1.20]
+
+  ANET:
+    name: Arista Networks
+    market: US
+    currency: USD
+    target_source: finnhub
+    fallback_consensus_target: 175
+    fallback_buy_margins: [0.90, 0.85, 0.78]
+    fallback_sell_multipliers: [1.12, 1.22]
+
+  V:
+    name: Visa
+    market: US
+    currency: USD
+    target_source: finnhub
+    fallback_consensus_target: 380
+    fallback_buy_margins: [0.90, 0.85, 0.78]
+    fallback_sell_multipliers: [1.10, 1.20]
+
+  MA:
+    name: Mastercard
+    market: US
+    currency: USD
+    target_source: finnhub
+    fallback_consensus_target: 580
+    fallback_buy_margins: [0.90, 0.85, 0.78]
+    fallback_sell_multipliers: [1.10, 1.20]
+
+  SPGI:
+    name: S&P Global
+    market: US
+    currency: USD
+    target_source: finnhub
+    fallback_consensus_target: 440
+    fallback_buy_margins: [0.90, 0.85, 0.78]
+    fallback_sell_multipliers: [1.10, 1.20]
+
+  SOXX:
+    name: iShares Semiconductor ETF
+    market: US
+    currency: USD
+    target_source: manual
+    fallback_consensus_target: 520
+    fallback_buy_margins: [1.00, 0.94, 0.86]
+    fallback_sell_multipliers: [1.16, 1.22]
+
+  DRAM:
+    name: Roundhill Memory ETF
+    market: US
+    currency: USD
+    target_source: manual
+    fallback_consensus_target: 48
+    fallback_buy_margins: [1.00, 0.88, 0.75]
+    fallback_sell_multipliers: [1.25, 1.45]
+
+  "9888.HK":
+    name: Baidu
+    market: HK
+    currency: HKD
+    target_source: marketscreener
+    marketscreener:
+      technical_url: "https://www.marketscreener.com/quote/stock/BAIDU-INC-120803046/graphics/"
+      consensus_url: "https://www.marketscreener.com/quote/stock/BAIDU-INC-120803046/consensus/"
+    fallback_consensus_target: 125
+    fallback_buy_margins: [0.90, 0.82, 0.72]
+    fallback_sell_multipliers: [1.15, 1.30]
+
+  "1888.HK":
+    name: Kingboard Laminates
+    market: HK
+    currency: HKD
+    target_source: marketscreener
+    marketscreener:
+      technical_url: "https://www.marketscreener.com/quote/stock/KINGBOARD-LAMINATES-HOLDI-6170930/graphics/"
+      consensus_url: "https://www.marketscreener.com/quote/stock/KINGBOARD-LAMINATES-HOLDI-6170930/consensus/"
+    fallback_consensus_target: 59.58
+    fallback_buy_margins: [0.90, 0.82, 0.72]
+    fallback_sell_multipliers: [1.10, 1.25]
+
+  "0100.HK":
+    name: MiniMax
+    market: HK
+    currency: HKD
+    target_source: marketscreener
+    marketscreener:
+      technical_url: "https://www.marketscreener.com/quote/stock/MINIMAX-GROUP-INC-201432992/graphics/"
+      consensus_url: "https://www.marketscreener.com/quote/stock/MINIMAX-GROUP-INC-201432992/consensus/"
+    fallback_consensus_target: 250
+    fallback_buy_margins: [0.90, 0.82, 0.72]
+    fallback_sell_multipliers: [1.15, 1.35]
+
+etfs:
+  "513100":
+    name: 纳指100ETF
+    market: CN
+    premium_thresholds:
+      normal: 0.03
+      high: 0.05
+      very_high: 0.08
+      extreme: 0.10
+
+  "513500":
+    name: 标普500ETF
+    market: CN
+    premium_thresholds:
+      normal: 0.03
+      high: 0.05
+      very_high: 0.08
+      extreme: 0.10

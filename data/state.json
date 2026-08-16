@@ -1,0 +1,130 @@
+{
+  "valuations": {
+    "GOOGL": {
+      "fair_value": null,
+      "buy": {},
+      "sell": {},
+      "source": "fallback"
+    },
+    "MSFT": {
+      "fair_value": null,
+      "buy": {},
+      "sell": {},
+      "source": "fallback"
+    },
+    "AVGO": {
+      "fair_value": null,
+      "buy": {},
+      "sell": {},
+      "source": "fallback"
+    },
+    "MU": {
+      "fair_value": null,
+      "buy": {},
+      "sell": {},
+      "source": "fallback"
+    },
+    "ANET": {
+      "fair_value": null,
+      "buy": {},
+      "sell": {},
+      "source": "fallback"
+    },
+    "V": {
+      "fair_value": null,
+      "buy": {},
+      "sell": {},
+      "source": "fallback"
+    },
+    "MA": {
+      "fair_value": null,
+      "buy": {},
+      "sell": {},
+      "source": "fallback"
+    },
+    "SPGI": {
+      "fair_value": null,
+      "buy": {},
+      "sell": {},
+      "source": "fallback"
+    },
+    "SOXX": {
+      "fair_value": null,
+      "buy": {},
+      "sell": {},
+      "source": "fallback"
+    },
+    "DRAM": {
+      "fair_value": null,
+      "buy": {},
+      "sell": {},
+      "source": "fallback"
+    },
+    "9888.HK": {
+      "fair_value": null,
+      "buy": {},
+      "sell": {},
+      "source": "fallback"
+    },
+    "1888.HK": {
+      "fair_value": null,
+      "buy": {},
+      "sell": {},
+      "source": "fallback"
+    },
+    "0100.HK": {
+      "fair_value": null,
+      "buy": {},
+      "sell": {},
+      "source": "fallback"
+    }
+  },
+  "latest_report": "📊 投资监控 | 2026-08-16 15:58\n\n🇺🇸🇭🇰 股票监控\nGOOGL 345.9 ⚪ 持有 (finnhub)\nMSFT None ⚪ 无价格 (unavailable)\nAVGO 392.99 ⚪ 持有 (finnhub)\nMU 971.66 ⚪ 持有 (finnhub)\nANET 198.82 ⚪ 持有 (finnhub)\nV 364.15 ⚪ 持有 (finnhub)\nMA 569.29 ⚪ 持有 (finnhub)\nSPGI 418.8 ⚪ 持有 (finnhub)\nSOXX 550.42 ⚪ 持有 (finnhub)\nDRAM 57.32 ⚪ 持有 (finnhub)\n9888.HK None ⚪ 无价格 (unavailable)\n1888.HK None ⚪ 无价格 (unavailable)\n0100.HK None ⚪ 无价格 (unavailable)\n\n🇨🇳 ETF溢价",
+  "quotes": {
+    "GOOGL": {
+      "price": 345.9,
+      "change_pct": -0.13280979327867648,
+      "source": "finnhub"
+    },
+    "AVGO": {
+      "price": 392.99,
+      "change_pct": -5.942750466708146,
+      "source": "finnhub"
+    },
+    "MU": {
+      "price": 971.66,
+      "change_pct": 2.2983060126548827,
+      "source": "finnhub"
+    },
+    "ANET": {
+      "price": 198.82,
+      "change_pct": -2.3573322856300982,
+      "source": "finnhub"
+    },
+    "V": {
+      "price": 364.15,
+      "change_pct": -0.3557258174852973,
+      "source": "finnhub"
+    },
+    "MA": {
+      "price": 569.29,
+      "change_pct": 0.3967974040631983,
+      "source": "finnhub"
+    },
+    "SPGI": {
+      "price": 418.8,
+      "change_pct": -0.9156079210731805,
+      "source": "finnhub"
+    },
+    "SOXX": {
+      "price": 550.42,
+      "change_pct": -0.058103642372087094,
+      "source": "finnhub"
+    },
+    "DRAM": {
+      "price": 57.32,
+      "change_pct": 0.6850518180221421,
+      "source": "finnhub"
+    }
+  }
+}
